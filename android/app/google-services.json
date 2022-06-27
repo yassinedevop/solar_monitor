@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "346988084289-jtfk61fu37kq2av546bh8j1r1239c4rq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.solar_monitor",
+            "certificate_hash": "bdcb2511b7b8985771eee72b435ba791a493bb4e"
+          }
+        },
+        {
           "client_id": "346988084289-gnn0vlgl5320rvb7afvnus9oa6qk0hjl.apps.googleusercontent.com",
           "client_type": 3
         }

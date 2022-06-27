@@ -38,6 +38,9 @@ dependencies:
   firebase_core: ^1.18.0
   firebase_database: ^9.0.16
   firebase_auth: ^3.3.20
+  solar_calculator: ^1.0.3
+  flutter_geofence: ^0.4.4
+  google_fonts: ^3.0.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -60,8 +63,10 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/solar_background.png
+    - assets/sun.png
+    - assets/pv_background.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

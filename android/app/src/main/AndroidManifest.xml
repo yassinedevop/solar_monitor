@@ -1,9 +1,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.solar_monitor">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
    <application
         android:label="solar_monitor"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <receiver android:name="com.intivoto.flutter_geofence.GeofenceBroadcastReceiver"
+                android:enabled="true" android:exported="true"/>
+        <service android:name="com.intivoto.flutter_geofence.FlutterGeofencePlugin"
+                android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
